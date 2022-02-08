@@ -1,0 +1,16 @@
+namespace: production
+commonLabels:
+  environment: production
+resources:
+- ../../base
+- ingress.yaml
+configMapGenerator:
+- envs:
+  - .env.config
+  name: getting-started
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: tuuli/getting-started
+  newName: tuuli/getting-started
+  newTag: test2

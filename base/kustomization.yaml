@@ -1,0 +1,5 @@
+commonLabels:
+  app: getting-started
+resources:
+  - deployment.yaml
+  - service.yaml
