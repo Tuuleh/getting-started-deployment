@@ -11,6 +11,8 @@ configMapGenerator:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
+- name: getting-started/getting-started
+  newTag: bf65614
 - name: tuuli/getting-started
   newName: tuuli/getting-started
   newTag: test2
