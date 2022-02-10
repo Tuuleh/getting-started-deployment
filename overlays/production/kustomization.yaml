@@ -13,5 +13,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: tuuli/getting-started
-  newName: tuuli/getting-started
-  newTag: test2
+  newTag: bf65614
+- name: tuuli/getting-started
+  newTag: b6e3580
