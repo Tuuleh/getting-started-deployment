@@ -4,6 +4,7 @@ commonLabels:
 resources:
 - ../../base
 - ingress.yaml
+- namespace.yaml
 configMapGenerator:
 - envs:
   - .env.config
