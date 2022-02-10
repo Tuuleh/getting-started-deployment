@@ -14,5 +14,4 @@ images:
 - name: getting-started/getting-started
   newTag: bf65614
 - name: tuuli/getting-started
-  newName: tuuli/getting-started
-  newTag: test2
+  newTag: b6e3580
