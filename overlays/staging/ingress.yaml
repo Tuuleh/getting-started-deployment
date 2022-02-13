@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: getting-started
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+spec:
+  tls:
+  - hosts:
+    - staging.misfitknit.com
+    secretName: getting-started-tls
+  rules:
+  - host: staging.misfitknit.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: getting-started
+            port:
+              number: 8000
+        pathType: ImplementationSpecific
